@@ -2,6 +2,11 @@
   "extends": [
     "config:base"
   ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/__tests__/**",
+    "**/test/**"
+  ],
   "statusCheckVerify": true,
   "rangeStrategy": "update-lockfile",
   "semanticCommits": true,
