@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "statusCheckVerify": true,
+  "rangeStrategy": "update-lockfile",
+  "semanticCommits": true,
+  "semanticCommitScope": null,
+  "lockFileMaintenance": {
+    "schedule": "at any time"
+  }
+}
