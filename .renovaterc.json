@@ -10,6 +10,7 @@
   "statusCheckVerify": true,
   "rangeStrategy": "update-lockfile",
   "semanticCommits": true,
+  "semanticCommitType": "chore",
   "semanticCommitScope": null,
   "lockFileMaintenance": {
     "schedule": "at any time"
