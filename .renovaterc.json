@@ -32,5 +32,9 @@
   "semanticCommitScope": null,
 
   "separateMajorMinor": true,
-  "separateMinorPatch": false
+  "separateMinorPatch": false,
+
+  "masterIssue": true,
+  "masterIssueApproval": false,
+  "masterIssueAutoclose": true
 }
