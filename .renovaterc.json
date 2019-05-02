@@ -1,18 +1,36 @@
 {
   "extends": [
-    "config:base"
+    "group:monorepos",
+    "group:recommended",
+    "helpers:disableTypesNodeMajor"
   ],
+
   "ignorePaths": [
     "**/node_modules/**",
     "**/__tests__/**",
     "**/test/**"
   ],
-  "statusCheckVerify": true,
+
+  "automerge": false,
+  "branchPrefix": "renovate/",
+  "ignoreUnstable": true,
   "rangeStrategy": "update-lockfile",
+  "statusCheckVerify": true,
+  "updateNotScheduled": true,
+
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": "at any time"
+  },
+
+  "prConcurrentLimit": 20,
+  "prCreation": "immediate",
+  "prHourlyLimit": 2,
+
   "semanticCommits": true,
   "semanticCommitType": "chore",
   "semanticCommitScope": null,
-  "lockFileMaintenance": {
-    "schedule": "at any time"
-  }
+
+  "separateMajorMinor": true,
+  "separateMinorPatch": false
 }
